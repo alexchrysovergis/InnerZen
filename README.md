@@ -1,0 +1,1 @@
+This is a small project where I'm transforming my Figma design into a static HTML page.
