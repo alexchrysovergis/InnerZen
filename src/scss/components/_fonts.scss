@@ -14,11 +14,17 @@
     src: url("../../assets/fonts/Poppins/Poppins-ExtraLight.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "PoppinsT";
+    src: url("../../assets/fonts/Poppins/Poppins-Thin.ttf") format('truetype');
+}
+
 
 $poppins: (
     "poppinsm": "PoppinsM",
     "poppinsl": "PoppinsL",
     "poppinsel": "PoppinsEL",
+    'poppinst': 'PoppinsT'
 );
 // map.get($poppins, "poppinsm");
 

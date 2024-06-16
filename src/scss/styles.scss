@@ -2,6 +2,7 @@
 @import './components/mixins';
 @import './components/variables';
 @import './components/fonts';
+@import './components/header';
 
 html, body {
     padding: 0;
@@ -14,24 +15,39 @@ html, body {
     @include clamp('padding-right', 40px, 15.2vw, 160px);
 }
 
-.header {
-    @include clamp('padding-top', 15px, 5.2vw, 27px);
-    text-transform: uppercase;
-
-    &-cta {
-        background: $primarycolor;
-        border-radius: 0;
-        padding: .38rem 1.95rem;
-
-        &:hover {
-            background: $primarycolor;
-            opacity: 0.8;
-        }
-    }
-}
-
 .hero {
     background: url("../../assets/img/innerzen-hero-image.png") no-repeat center center;
     background-size: cover;
-    height: 90vh;
+    height: 66.22vh;
+
+    &-title {
+        font-family: map-get($map: $poppins, $key: 'poppinst');
+        @include clamp('font-size', 25px, 10.2vw, 83px);
+        text-transform: uppercase;
+        max-width: 592px;
+        letter-spacing: 4px;
+        line-height: 90%;
+    }
+
+    &-keyword {
+        color: $primarycolor;
+    }
+
+    &-box {
+        background: $white;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 280px;
+        max-width: 814px;
+        column-gap: 7.5rem;
+        min-height: 164px;
+        box-shadow: 0px 19px 86px 0px rgba(107, 107, 107, 0.19);
+        
+
+        &-cta {
+            color: $primarycolor;
+            @include clamp('font-size', 16px, 10.2vw, 24px);
+            text-transform: uppercase;
+        }
+    }
 }

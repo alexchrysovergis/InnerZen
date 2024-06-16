@@ -1,0 +1,16 @@
+.header {
+    @include clamp('padding-top', 15px, 5.2vw, 27px);
+    text-transform: uppercase;
+
+    &-cta {
+        background: $primarycolor;
+        border-radius: 0;
+        padding: 0.65rem 1.8rem;
+        white-space: nowrap;
+
+        &:hover {
+            background: $primarycolor;
+            opacity: 0.8;
+        }
+    }
+}
