@@ -2,6 +2,12 @@
     @include clamp('padding-top', 15px, 5.2vw, 27px);
     text-transform: uppercase;
 
+    .menu {
+        ul {
+            column-gap: 1.875rem;
+        }
+    }
+
     &-cta {
         background: $primarycolor;
         border-radius: 0;
