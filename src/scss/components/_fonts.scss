@@ -1,0 +1,29 @@
+// Poppins
+@font-face {
+    font-family: "PoppinsM";
+    src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "PoppinsL";
+    src: url("../../assets/fonts/Poppins/Poppins-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "PoppinsEL";
+    src: url("../../assets/fonts/Poppins/Poppins-ExtraLight.ttf") format('truetype');
+}
+
+
+$poppins: (
+    "poppinsm": "PoppinsM",
+    "poppinsl": "PoppinsL",
+    "poppinsel": "PoppinsEL",
+);
+// map.get($poppins, "poppinsm");
+
+@each $key, $value in $poppins {
+    .asty-#{$key} {
+        font-family: $value, 'sans-serif';
+    }
+}
