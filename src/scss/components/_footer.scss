@@ -1,0 +1,42 @@
+.footer {
+    @include clamp('padding-top', 25px, 6.2vw, 45px);
+    @include clamp('padding-bottom', 25px, 6.2vw, 45px);
+
+    &-top {
+        @include clamp('margin-bottom', 25px, 8.2vw, 74px);
+        &-title {
+            font-family: map-get($map: $poppins, $key: 'poppinsel');
+            @include clamp('font-size', 25px, 4.2vw, 50px);
+            line-height: 110%;
+            max-width: 430px;
+            text-transform: uppercase;
+        }
+
+        &-social {
+            padding-right: 10px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        &-keyword {
+            color: $primarycolor;
+        }
+    }
+
+    &-bottom {
+        &-mail {
+            vertical-align: bottom;
+            padding-right: 13px;
+        }
+
+        &-anchor {
+            padding-right: 26px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
