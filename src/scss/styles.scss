@@ -55,3 +55,70 @@ html, body {
         }
     }
 }
+
+.about-section {
+    @include clamp('margin-top', 40px, 15.2vw, 153px);
+    @include clamp('margin-bottom', 30px, 15.2vw, 119px);
+    
+    &-item-1 {
+        @include clamp('padding-right', 25px, 10.2vw, 57.5px);
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-item-1 {
+            padding-right: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-item-1 {
+            padding-right: 0;
+        }
+    }
+
+    &-item-2 {
+        @include clamp('padding-left', 25px, 10.2vw, 57.5px);
+    }
+
+    @include media-breakpoint-down(xl) {
+        &-item-2 {
+            padding-left: 2.5rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        &-item-2 {
+            padding-left: 0;
+        }
+    }
+
+    &-title {
+        @include clamp('font-size', 25px, 4.2vw, 50px);
+        @include clamp('margin-bottom', 15px, 4.2vw, 30px);
+        letter-spacing: 2px;
+        line-height: 110%;
+        max-width: 427px;
+        text-transform: uppercase;
+        border-left: 6px solid $primarycolor;
+        padding-left: 22px;
+    }
+
+    &-content {
+        @include clamp('margin-bottom', 15px, 4.2vw, 30px);
+        line-height: 170%;
+        color: #434444;
+    }
+
+    &-cta {
+        background: $primarycolor;
+        border-radius: 0;
+        padding: 0.65rem 1.8rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $primarycolor;
+            opacity: 0.8;
+        }
+    }
+}
