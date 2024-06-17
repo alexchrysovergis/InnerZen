@@ -105,6 +105,7 @@ html, body {
 
     &-content {
         @include clamp('margin-bottom', 15px, 4.2vw, 30px);
+        max-width: 455px;
         line-height: 170%;
         color: #434444;
     }
