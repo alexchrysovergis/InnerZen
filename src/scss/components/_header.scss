@@ -1,6 +1,7 @@
 .header {
     @include clamp('padding-top', 15px, 5.2vw, 27px);
     text-transform: uppercase;
+    z-index: $z-index-header;
 
     .menu {
         ul {
