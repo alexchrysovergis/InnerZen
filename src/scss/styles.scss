@@ -1,4 +1,7 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/tailwindcss/base";
+@import "../node_modules/tailwindcss/components";
+@import "../node_modules/tailwindcss/utilities";
+
 @import './components/mixins';
 @import './components/variables';
 @import './components/fonts';
@@ -64,33 +67,33 @@ html, body {
         @include clamp('padding-right', 25px, 10.2vw, 57.5px);
     }
 
-    @include media-breakpoint-down(xl) {
-        &-item-1 {
-            padding-right: 2.5rem;
-        }
-    }
+    // @include media-breakpoint-down(xl) {
+    //     &-item-1 {
+    //         padding-right: 2.5rem;
+    //     }
+    // }
 
-    @include media-breakpoint-down(lg) {
-        &-item-1 {
-            padding-right: 0;
-        }
-    }
+    // @include media-breakpoint-down(lg) {
+    //     &-item-1 {
+    //         padding-right: 0;
+    //     }
+    // }
 
     &-item-2 {
         @include clamp('padding-left', 25px, 10.2vw, 57.5px);
     }
 
-    @include media-breakpoint-down(xl) {
-        &-item-2 {
-            padding-left: 2.5rem;
-        }
-    }
+    // @include media-breakpoint-down(xl) {
+    //     &-item-2 {
+    //         padding-left: 2.5rem;
+    //     }
+    // }
 
-    @include media-breakpoint-down(lg) {
-        &-item-2 {
-            padding-left: 0;
-        }
-    }
+    // @include media-breakpoint-down(lg) {
+    //     &-item-2 {
+    //         padding-left: 0;
+    //     }
+    // }
 
     &-title {
         @include clamp('font-size', 25px, 4.2vw, 50px);
