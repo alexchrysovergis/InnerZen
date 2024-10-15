@@ -8,86 +8,73 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header container-fluid content-padding position-fixed">
-        <div class="row">
-            <div class="col-6">
-                <img class="img-fluid" src="assets/img/innerzen-logo.svg" alt="InnerZen Logo">
-            </div>
-            <div class="menu col-6 d-none d-lg-flex justify-content-end align-items-center">
-                <ul class="list-unstyled d-flex flex-row m-0">
-                    <li><a class="text-dark text-decoration-none" href="">Home</a></li>
-                    <li><a class="text-dark text-decoration-none" href="">About</a></li>
-                    <li><a class="text-dark text-decoration-none" href="">Locations</a></li>
-                    <li><a class="text-dark text-decoration-none" href="">Contact</a></li>
-                </ul>
-                <a class="d-none d-lg-block btn ms-4 header-cta" href="">Sign Up</a>
-            </div>
+    <header class="header flex content-padding fixed w-full">
+        <div class="w-1/2">
+            <img class="img-fluid" src="assets/img/innerzen-logo.svg" alt="InnerZen Logo">
+        </div>
+        <div class="menu w-1/2 lg:flex hidden justify-end items-center">
+            <ul class="list-unstyled flex m-0">
+                <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Home</a></li>
+                <li><a class="text-dark text-decoration-none" href="javascript:void(0)">About</a></li>
+                <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Locations</a></li>
+                <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Contact</a></li>
+            </ul>
+            <a class="lg:block hidden btn ms-4 header-cta" href="javascript:void(0)">Sign Up</a>
         </div>
     </header>
     <!-- End of Header -->
 
     <!-- Hero Section -->
-    <section class="hero container-fluid d-flex align-items-center content-padding">
-        <div class="row w-100 position-relative">
-            <div class="col-12">
-                <h1 class="hero-title text-white">unlock <span class="text-black">your</span> inner <span class="hero-keyword">calmness</span></h1>
-            </div>
-
-            <div class="col-12 hero-box bg-white position-absolute d-none d-lg-flex justify-content-center align-items-center"> 
-                <a class="hero-box-cta text-decoration-none" href="">
-                    <img class="hero-box-cta-icon d-block mx-auto" src="assets/img/Icons/inclusive-icon.svg" alt="Inclusive Icon">
-                    Inclusive
-                </a>
-                
-                <a class="hero-box-cta text-decoration-none" href="">
-                    <img class="hero-box-cta-icon d-block mx-auto" src="assets/img/Icons/social-icon.svg" alt="Social Icon">
-                    Social
-                </a>
-                <a class="hero-box-cta text-decoration-none" href="">
-                    <img class="hero-box-cta-icon d-block mx-auto" src="assets/img/Icons/online-icon.svg" alt="Online Icon">
-                    Online
-                </a>
-            </div>
+    <section class="hero flex items-center content-padding relative">
+        <h1 class="hero-title text-white">unlock <span class="text-black">your</span> inner <span class="hero-keyword">calmness</span></h1>
+        <div class="col-12 hero-box bg-white absolute lg:flex hidden justify-center items-center"> 
+            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
+                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/inclusive-icon.svg" alt="Inclusive Icon">
+                Inclusive
+            </a>
+            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
+                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/social-icon.svg" alt="Social Icon">
+                Social
+            </a>
+            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
+                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/online-icon.svg" alt="Online Icon">
+                Online
+            </a>
         </div>
     </section>
     <!-- End of Hero Section -->
 
     <!-- About Section -->
-    <section class="about-section container-fluid content-padding d-flex justify-content-center">
-        <div class="row">
-            <div class="about-section-item-1 col-12 col-lg-6 d-flex flex-column justify-content-center ps-0 py-5 py-lg-5">
-                <img class="img-fluid" src="assets/img/innerzen-humble-beginnings-section-image.png" alt="Innerzen Humble Beginnings Section Image">
-            </div>
-            <div class="about-section-item-2 col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-                <h2 class="about-section-title">our humble beginnings</h2>
-                <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in tellus integer. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.</p>
-                <p class="about-section-content">In egestas erat imperdiet sed euismod nisi porta lorem. Mi sit amet mauris commodo.</p>
-                <a class="d-none d-lg-block btn about-section-cta" href="">Learn More</a>
-            </div>
+    <section class="about-section content-padding flex justify-center">
+        <div class="about-section-item-1 w-1/2 col-lg-6 d-flex flex-col justify-center ps-0 py-5 py-lg-5">
+            <img class="img-fluid" src="assets/img/innerzen-humble-beginnings-section-image.png" alt="Innerzen Humble Beginnings Section Image">
+        </div>
+        <div class="about-section-item-2 w-1/2 col-lg-6 d-flex flex-col justify-center items-start">
+            <h2 class="about-section-title">our humble beginnings</h2>
+            <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in tellus integer. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.</p>
+            <p class="about-section-content">In egestas erat imperdiet sed euismod nisi porta lorem. Mi sit amet mauris commodo.</p>
+            <a class="hidden lg:block btn about-section-cta" href="javascript:void(0)">Learn More</a>
         </div>
     </section>
     <!-- End of About Section -->
 
     <!-- Footer -->
-     <footer class="footer container-fluid content-padding bg-black d-flex flex-column justify-content-between">
-        <div class="row footer-top">
-            <div class="col-6 px-0">
+     <footer class="footer container-fluid content-padding bg-black flex flex-col justify-between">
+        <div class="footer-top w-full px-0">
+            <div class="flex justify-between items-center px-0">
                 <h3 class="footer-top-title text-white">BOOK your PRIVATE lesson <span class="footer-top-keyword">TODAY</span></h3>
-            </div>
-            <div class="col-6 d-flex justify-content-end align-items-center px-0">
-                <a class="footer-top-social text-white text-decoration-none" href=""><img src="assets/img/Icons/Linkedin-Icon.svg" alt="Linkedin Logo"></a>
-                <a class="footer-top-social text-white text-decoration-none" href=""><img src="assets/img/Icons/Facebook-Icon.svg" alt="Facebook Logo"></a>
-                <a class="footer-top-social text-white text-decoration-none" href=""><img src="assets/img/Icons/Instagram-Icon.svg" alt="Instagram Logo"></a>
+                <div class="social flex">
+                    <a class="footer-top-social text-white text-decoration-none" href="javascript:void(0)"><img src="assets/img/Icons/Linkedin-Icon.svg" alt="Linkedin Logo"></a>
+                    <a class="footer-top-social text-white text-decoration-none" href="javascript:void(0)"><img src="assets/img/Icons/Facebook-Icon.svg" alt="Facebook Logo"></a>
+                    <a class="footer-top-social text-white text-decoration-none" href="javascript:void(0)"><img src="assets/img/Icons/Instagram-Icon.svg" alt="Instagram Logo"></a>
+                </div>
             </div>
         </div>
-
-        <div class="row footer-bottom">
-            <div class="col-6 px-0 d-flex align-items-center">
-                <a href="" class="text-white text-decoration-none"><img class="footer-bottom-mail" src="assets/img/Icons/Mail-Icon.svg" alt="info@innerzen.com">info@innerzen.com</a>
-            </div>
-            <div class="col-6 d-flex justify-content-end px-0">
-                <a href="" class="footer-bottom-anchor text-white text-decoration-none">Privacy Policy</a>
-                <a href="" class="footer-bottom-anchor text-white text-decoration-none">Terms & Conditions</a>
+        <div class="footer-bottom w-full px-0 d-flex align-items-center">
+            <div class="flex justify-end px-0">
+                <a href="javascript:void(0)" class="text-white text-decoration-none"><img class="footer-bottom-mail" src="assets/img/Icons/Mail-Icon.svg" alt="info@innerzen.com">info@innerzen.com</a>
+                <a href="javascript:void(0)" class="footer-bottom-anchor text-white text-decoration-none">Privacy Policy</a>
+                <a href="javascript:void(0)" class="footer-bottom-anchor text-white text-decoration-none">Terms & Conditions</a>
             </div>
         </div>
      </footer>
