@@ -3,16 +3,22 @@
 @import "../node_modules/tailwindcss/utilities";
 
 @import './components/mixins';
-@import './components/variables';
 @import './components/fonts';
-@import './components/header';
 @import './components/footer';
 
-html, body {
-    padding: 0;
-    margin: 0;
+body {
     font-family: map-get($map: $poppins, $key: 'poppinsl');
 }
+
+/* header */
+
+.header {
+    @include clamp('padding-top', 15px, 5.2vw, 27px);
+}
+
+/* header */
+
+/* main */
 
 .content-padding {
     @include clamp('padding-left', 40px, 15.2vw, 160px);
@@ -33,28 +39,18 @@ html, body {
         line-height: 90%;
     }
 
-    &-keyword {
-        color: $primarycolor;
-    }
-
     &-box {
         left: 50%;
         transform: translate(-50%, 0);
-        top: 280px;
+        top: 50vh;
         max-width: 814px;
         column-gap: 7.5rem;
-        min-height: 164px;
         box-shadow: 0px 19px 86px 0px rgba(107, 107, 107, 0.19);
 
         &-cta {
-            color: $primarycolor;
             @include clamp('font-size', 16px, 10.2vw, 24px);
             text-transform: uppercase;
             letter-spacing: -1px;
-
-            &-icon {
-                margin-bottom: 13px;
-            }
         }
     }
 }
@@ -67,33 +63,9 @@ html, body {
         @include clamp('padding-right', 25px, 10.2vw, 57.5px);
     }
 
-    // @include media-breakpoint-down(xl) {
-    //     &-item-1 {
-    //         padding-right: 2.5rem;
-    //     }
-    // }
-
-    // @include media-breakpoint-down(lg) {
-    //     &-item-1 {
-    //         padding-right: 0;
-    //     }
-    // }
-
     &-item-2 {
         @include clamp('padding-left', 25px, 10.2vw, 57.5px);
     }
-
-    // @include media-breakpoint-down(xl) {
-    //     &-item-2 {
-    //         padding-left: 2.5rem;
-    //     }
-    // }
-
-    // @include media-breakpoint-down(lg) {
-    //     &-item-2 {
-    //         padding-left: 0;
-    //     }
-    // }
 
     &-title {
         @include clamp('font-size', 25px, 4.2vw, 50px);
@@ -102,8 +74,6 @@ html, body {
         line-height: 110%;
         max-width: 427px;
         text-transform: uppercase;
-        border-left: 6px solid $primarycolor;
-        padding-left: 22px;
     }
 
     &-content {
@@ -112,17 +82,6 @@ html, body {
         line-height: 170%;
         color: #434444;
     }
-
-    &-cta {
-        background: $primarycolor;
-        border-radius: 0;
-        padding: 0.65rem 1.8rem;
-        white-space: nowrap;
-        text-transform: uppercase;
-
-        &:hover {
-            background: $primarycolor;
-            opacity: 0.8;
-        }
-    }
 }
+
+/* main */

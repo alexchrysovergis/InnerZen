@@ -5,7 +5,13 @@ module.exports = {
     './scss/**/*.scss',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#99CC00',
+        'secondary': '#E8E8E8',
+        'third': '#434444',
+      },
+    },
   },
   plugins: [],
 }

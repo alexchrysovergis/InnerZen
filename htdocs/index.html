@@ -6,38 +6,38 @@
     <title>InnerZen</title>
     <link rel="stylesheet" href="./dist/css/styles.min.css">
 </head>
-<body>
+<body class="p-0 m-0">
     <!-- Header -->
-    <header class="header flex content-padding fixed w-full">
+    <header class="header flex content-padding fixed w-full z-50 uppercase">
         <div class="w-1/2">
             <img class="img-fluid" src="assets/img/innerzen-logo.svg" alt="InnerZen Logo">
         </div>
         <div class="menu w-1/2 lg:flex hidden justify-end items-center">
-            <ul class="list-unstyled flex m-0">
+            <ul class="list-unstyled flex m-0 gap-x-7">
                 <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Home</a></li>
                 <li><a class="text-dark text-decoration-none" href="javascript:void(0)">About</a></li>
                 <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Locations</a></li>
                 <li><a class="text-dark text-decoration-none" href="javascript:void(0)">Contact</a></li>
             </ul>
-            <a class="lg:block hidden btn ms-4 header-cta" href="javascript:void(0)">Sign Up</a>
+            <a class="lg:block hidden btn ms-4 header-cta bg-primary py-2.5 px-7 hover:opacity-80" href="javascript:void(0)">Sign Up</a>
         </div>
     </header>
     <!-- End of Header -->
 
     <!-- Hero Section -->
     <section class="hero flex items-center content-padding relative">
-        <h1 class="hero-title text-white">unlock <span class="text-black">your</span> inner <span class="hero-keyword">calmness</span></h1>
-        <div class="col-12 hero-box bg-white absolute lg:flex hidden justify-center items-center"> 
-            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
-                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/inclusive-icon.svg" alt="Inclusive Icon">
+        <h1 class="hero-title text-white">unlock <span class="text-black">your</span> inner <span class="text-primary">calmness</span></h1>
+        <div class="w-full hero-box bg-white absolute lg:flex hidden justify-center items-center min-h-40"> 
+            <a class="hero-box-cta text-decoration-none text-primary" href="javascript:void(0)">
+                <img class="block mx-auto pb-3" src="assets/img/Icons/inclusive-icon.svg" alt="Inclusive Icon">
                 Inclusive
             </a>
-            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
-                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/social-icon.svg" alt="Social Icon">
+            <a class="hero-box-cta text-decoration-none text-primary" href="javascript:void(0)">
+                <img class="block mx-auto pb-3" src="assets/img/Icons/social-icon.svg" alt="Social Icon">
                 Social
             </a>
-            <a class="hero-box-cta text-decoration-none" href="javascript:void(0)">
-                <img class="hero-box-cta-icon block mx-auto" src="assets/img/Icons/online-icon.svg" alt="Online Icon">
+            <a class="hero-box-cta text-decoration-none text-primary" href="javascript:void(0)">
+                <img class="block mx-auto pb-3" src="assets/img/Icons/online-icon.svg" alt="Online Icon">
                 Online
             </a>
         </div>
@@ -45,24 +45,27 @@
     <!-- End of Hero Section -->
 
     <!-- About Section -->
-    <section class="about-section content-padding flex justify-center">
-        <div class="about-section-item-1 w-1/2 col-lg-6 d-flex flex-col justify-center ps-0 py-5 py-lg-5">
-            <img class="img-fluid" src="assets/img/innerzen-humble-beginnings-section-image.png" alt="Innerzen Humble Beginnings Section Image">
-        </div>
-        <div class="about-section-item-2 w-1/2 col-lg-6 d-flex flex-col justify-center items-start">
-            <h2 class="about-section-title">our humble beginnings</h2>
-            <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in tellus integer. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.</p>
-            <p class="about-section-content">In egestas erat imperdiet sed euismod nisi porta lorem. Mi sit amet mauris commodo.</p>
-            <a class="hidden lg:block btn about-section-cta" href="javascript:void(0)">Learn More</a>
+    <section class="about-section container mx-auto px-4 flex justify-center">
+        <div class="flex flex-wrap">
+            <div class="about-section-item-1 w-full lg:w-1/2 flex flex-col justify-center py-5">
+                <img class="w-full h-auto" src="assets/img/innerzen-humble-beginnings-section-image.png" alt="Innerzen Humble Beginnings Section Image">
+            </div>
+            <div class="about-section-item-2 w-full lg:w-1/2 flex flex-col justify-center items-start">
+                <h2 class="about-section-title ps-6 border-l-4 border-primary">our humble beginnings</h2>
+                <p class="about-section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at risus viverra adipiscing at in tellus integer. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.</p>
+                <p class="about-section-content">In egestas erat imperdiet sed euismod nisi porta lorem. Mi sit amet mauris commodo.</p>
+                <a class="hidden lg:inline-block btn about-section-cta bg-primary py-2.5 px-7 uppercase hover:opacity-80" href="javascript:void(0)">Learn More</a>
+            </div>
         </div>
     </section>
+    
     <!-- End of About Section -->
 
     <!-- Footer -->
      <footer class="footer container-fluid content-padding bg-black flex flex-col justify-between">
         <div class="footer-top w-full px-0">
             <div class="flex justify-between items-center px-0">
-                <h3 class="footer-top-title text-white">BOOK your PRIVATE lesson <span class="footer-top-keyword">TODAY</span></h3>
+                <h3 class="footer-top-title text-white">BOOK your PRIVATE lesson <span class="footer-top-keyword text-primary">TODAY</span></h3>
                 <div class="social flex">
                     <a class="footer-top-social text-white text-decoration-none" href="javascript:void(0)"><img src="assets/img/Icons/Linkedin-Icon.svg" alt="Linkedin Logo"></a>
                     <a class="footer-top-social text-white text-decoration-none" href="javascript:void(0)"><img src="assets/img/Icons/Facebook-Icon.svg" alt="Facebook Logo"></a>
